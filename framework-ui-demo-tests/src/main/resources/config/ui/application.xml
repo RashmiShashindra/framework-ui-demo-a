@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<data-project>
+     <environments>
+        <environment name="QA">
+            <application-user>
+                <username></username>
+                <password></password>
+                <invalidusername></invalidusername>
+                <invalidpassword></invalidpassword>
+                <invalidemail></invalidemail>
+                <downloaddirectory>C:\Reports\</downloaddirectory>
+            </application-user>
+        </environment>
+    </environments>
+    <table name="Manage users">
+        <user name="xxxx">
+            <score1>100</score1>
+            <score2>150</score2>
+        </user>
+        <user name="xxxx">
+            <score1>95</score1>
+            <score2>200</score2>
+        </user>
+    </table>
+</data-project>

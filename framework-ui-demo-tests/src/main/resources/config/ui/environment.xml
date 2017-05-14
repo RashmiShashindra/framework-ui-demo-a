@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<config-project>
+    <environmentType>QA</environmentType>
+    <environments>
+        <environment name = "QA">
+            <!-- For chrome driver location add the path on your local directory-->
+            <browser-type><name>chrome</name><driver>webdriver.chrome.driver</driver><location>chromedriver2_25.exe</location></browser-type>
+            <!-- For firefox driver location add the path on your local directory-->
+            <!--<browser-type><name>firefox</name><driver>webdriver.firefox.bin</driver><location>C:/Program Files (x86)/Mozilla Firefox/firefox.exe</location></browser-type>-->
+            <!--<browser-type><name>ie</name><driver>webdriver.ie.driver</driver><location>iedriver2_53.exe</location></browser-type>-->
+            <os-type>Windows</os-type>
+            <grid-mode>OFF</grid-mode>
+            <perf-mode>OFF</perf-mode>
+            <mobile-mode>OFF</mobile-mode>
+            <testlink-mode>
+                <test-link>OFF</test-link>
+                <test-link-url>http://localhost/testlink/lib/api/xmlrpc/v1/xmlrpc.php/index.php</test-link-url>
+                <test-link-key>8669eb2c00e5c56242b788b5ebdb3d07</test-link-key>
+                <test-link-project></test-link-project>
+                <test-link-project></test-link-project>
+                <test-link-plan></test-link-plan>
+                <test-link-platform></test-link-platform>
+                <test-link-build></test-link-build>
+                <test-link-prefix></test-link-prefix>
+            </testlink-mode>
+            <baseurl>
+                <!-- protocol types http , https -->
+                <protocol>http</protocol>
+                <server>puppies.herokuapp.com</server>
+                <port></port>
+                <directory></directory>
+                <page></page>
+            </baseurl>
+            <!-- REPORT DOWNLOAD PATH-->
+            <downloadpath>C:\Reports\</downloadpath>
+            <timeout>
+                <implicit>8000</implicit>
+                <script>2000</script>
+                <pageload>10000</pageload>
+                <!--element visible time based on env-->
+                <env-timeout>3000</env-timeout>
+            </timeout>
+            <!--Framework level brows
+            er specific error messages -->
+            <errortypes>
+                <!--Content missing message for fire fox browser -->
+                <contentnotfoundff>//*[text()='Unable to connect']</contentnotfoundff>
+                <!--Content missing message for chrome browser -->
+                <contentnotfoundgc>//*[text()='This webpage is not available']</contentnotfoundgc>
+                <!--Content missing message for ie browser -->
+                <contentnotfoundie>//*[text()='You’re not connected to a network']</contentnotfoundie>
+                <!--Timeout message for fire fox browser -->
+                <timeoutff>//*[text()='The connection has timed out']</timeoutff>
+                <!--Timeout message for chrome browser -->
+                <timeoutgc>//*[text()='This webpage is not available']</timeoutgc>
+                <!--Timeout message for ie browser -->
+                <timeoutie>//*[text()='This page can’t be displayed']</timeoutie>
+            </errortypes>
+        </environment>
+    </environments>
+</config-project>
